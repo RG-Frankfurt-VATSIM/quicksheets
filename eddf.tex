@@ -12,6 +12,8 @@
 \usepackage[table]{xcolor}
 \usepackage{booktabs}
 \usepackage{colortbl}
+\usepackage[ngerman]{babel}
+\usepackage[de-DE]{datetime2}
 
 
 \newlength{\Oldarrayrulewidth}
@@ -22,7 +24,7 @@
 
 \title{EDDF NEW}
 \author{ }
-\date{April 2020}
+\date{\today}
 
 \begin{document}
 
@@ -64,7 +66,7 @@ RFL                 &                                    & \multicolumn{1}{r|}{e
   \includegraphics[width=30\textwidth]{VATGer-Logo-Colour}
 \end{textblock}
 
-\begin{textblock}{2}(105,20)
+\begin{textblock}{2}(105,13.73)
 \begin{table}[]
 \begin{tabular}{|c|l|c|c|c|c|c|c|l}
 \multicolumn{8}{c}{\textbf{Standard South 18}}                                                                                                                                                                                                                  &                                  \\ \cline{1-8}
@@ -84,7 +86,7 @@ RFL                          &                  & \multicolumn{1}{r|}{even} & \m
 
 \end{textblock}
 
-\begin{textblock}{10}(178,75)
+\begin{textblock}{10}(178,70)
 \begin{table}[]
 \begin{tabular}{|l|l|l|l|}
 
@@ -117,7 +119,7 @@ RFL                          &                  & \multicolumn{1}{r|}{even} & \m
 \end{table}
 \end{textblock}
 
-\begin{textblock}{100}(0,80)
+\begin{textblock}{100}(0,70)
 \begin{table}[]
 \begin{tabular}{|l|l|l|l|l|l|l|l|l|}
 \multicolumn{9}{c}{\textbf{Precision Approach}}                                                                                                                                                                            \\ \hline
@@ -132,7 +134,7 @@ FAF  & LEDKI                             & REDGO                             & E
 
 
 
-\begin{textblock}{100}(100,145)
+\begin{textblock}{100}(100,125)
 \begin{table}[]
 \begin{tabular}{|l|l|l|}
 \multicolumn{3}{c}{\textbf{Non-RNAV}} \\ \hline
@@ -147,10 +149,11 @@ FAF  & LEDKI                             & REDGO                             & E
   \centering
   EDDF Quicksheet
 
-  05/2020
+  \DTMlangsetup{showdayofmonth=false}
+  \today
 \end{textblock}
 
-\begin{textblock}{100}(0, 145)
+\begin{textblock}{100}(0, 125)
 \begin{table}[]
 \begin{tabular}{|l|l|l|l|l|}
 \multicolumn{5}{c}{\textbf{Handoff levels}}              \\ \hline
@@ -161,7 +164,7 @@ FAF  & LEDKI                             & REDGO                             & E
 \end{table}
 \end{textblock}
 
-\begin{textblock}{100}(0,115)
+\begin{textblock}{100}(0,100)
 \begin{table}[]
 \begin{tabular}{|l|l|l|l|l|l|l|l|l|}
 

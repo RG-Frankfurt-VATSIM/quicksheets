@@ -12,7 +12,9 @@
 \usepackage[table]{xcolor}
 \usepackage{booktabs}
 \usepackage{colortbl}
-\usepackage{datetime}
+\usepackage[ngerman]{babel}
+\usepackage[de-DE]{datetime2}
+
 
 
 \newlength{\Oldarrayrulewidth}
@@ -21,13 +23,10 @@
   \noalign{\global\setlength{\arrayrulewidth}{#1}}\cline{#2}%
   \noalign{\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}}}
 
-\newdateformat{monthyear}{%
-  \THEMONTH/\THEYEAR
-}
 
 \title{EDDS NEW}
 \author{}
-\date{April 2020}
+\date{\today}
 
 \begin{document}
 
@@ -36,22 +35,6 @@
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{\TPHorizModule}
 \textblockorigin{7mm}{12mm}
-
-
-\begin{textblock}{30}(0,15)
-\begin{table}[]
-\begin{tabular}{lcccccccccccccc}
-                                  & \multicolumn{7}{c}{\textbf{North departures}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          & \multicolumn{6}{c}{\textbf{South departures}}                                                                                                                                                                                                                                                                                                                                             & \multicolumn{1}{l}{}                                                 \\ \hline
-\multicolumn{1}{|l|}{SID}         & \multicolumn{1}{c|}{KRH}                                                               & \multicolumn{1}{c|}{VESID} & \multicolumn{1}{c|}{TAGIK}                                                            & \multicolumn{1}{c|}{ETASA}                                                             & \multicolumn{1}{c|}{OKIBA}                                          & \multicolumn{1}{c|}{GEBNO}                                                  & \multicolumn{1}{c||}{DKB}                                                                    & \multicolumn{1}{c|}{ABTAL} & \multicolumn{1}{c|}{KUNOD} & \multicolumn{1}{c|}{SUL}                                                                                  & \multicolumn{1}{c|}{ROTWE}                                                                         & \multicolumn{1}{c|}{TEDGO}                                                    & \multicolumn{1}{c|}{STG}       & \multicolumn{1}{c|}{\multirow{10}{*}{\rotatebox{90}{\textbf{5000 ft}}}} \\ \cline{1-14}
-\multicolumn{1}{|l|}{RFL}         & \multicolumn{1}{l|}{even}                                                              & \multicolumn{1}{l|}{even}  & \multicolumn{1}{l|}{even}                                                             & \multicolumn{1}{l|}{even}                                                              & \multicolumn{1}{l|}{even}                                           & \multicolumn{1}{l|}{even}                                                   & \multicolumn{1}{l||}{odd}                                                                    & \multicolumn{1}{l|}{odd}   & \multicolumn{1}{l|}{odd}   & \multicolumn{1}{l|}{odd}                                                                                  & \multicolumn{1}{l|}{odd LS}                                                                        & \multicolumn{1}{l|}{odd}                                                      & \multicolumn{1}{l|}{odd}       & \multicolumn{1}{c|}{}                                                \\ \cline{1-14}
-\multicolumn{1}{|l|}{}            & \multicolumn{1}{r|}{\scriptsize \textless{}FL85}                        & \multicolumn{1}{r|}{}      & \multicolumn{1}{r|}{\scriptsize \textless{}FL245}                      & \multicolumn{1}{r|}{}                                                                  & \multicolumn{1}{r|}{\scriptsize \textgreater{}FL195} & \multicolumn{1}{r|}{\scriptsize \textless{}FL185}            & \multicolumn{1}{r||}{}                                                                       & \multicolumn{1}{r|}{}      & \multicolumn{1}{r|}{}      & \multicolumn{1}{r|}{}                                                                                     & \multicolumn{1}{l|}{even LF}                                            & \multicolumn{1}{r|}{}                                                         & \multicolumn{1}{r|}{}          & \multicolumn{1}{c|}{}                                                \\ \cline{1-14}
-\multicolumn{1}{|l|}{\textbf{25}} & \multicolumn{1}{c|}{5B}                                                                & \multicolumn{1}{c|}{4B}    & \multicolumn{1}{c|}{4B}                                                               & \multicolumn{1}{c|}{4B}                                                                & \multicolumn{1}{c|}{4B}                                             & \multicolumn{1}{c|}{7B}                                                     & \multicolumn{1}{c||}{9B}                                                                     & \multicolumn{1}{c|}{4B}    & \multicolumn{1}{c|}{2B}    & \multicolumn{1}{c|}{3B}                                                                                   & \multicolumn{1}{c|}{5B}                                                                            & \multicolumn{1}{c|}{1B}                                                       & \multicolumn{1}{c|}{1B}        & \multicolumn{1}{c|}{}                                                \\ \cline{1-14}
-\multicolumn{1}{|l|}{\textbf{07}} & \multicolumn{1}{c|}{2H}                                                                & \multicolumn{1}{c|}{2H}    & \multicolumn{1}{c|}{2H}                                                               & \multicolumn{1}{c|}{2H}                                                                & \multicolumn{1}{c|}{4H}                                             & \multicolumn{1}{c|}{6H}                                                     & \multicolumn{1}{c||}{4H}                                                                     & \multicolumn{1}{c|}{4H}    & \multicolumn{1}{c|}{2H}    & \multicolumn{1}{c|}{3H}                                                                                   & \multicolumn{1}{c|}{7H}                                                                            & \multicolumn{1}{c|}{2H}                                                       & \multicolumn{1}{c|}{2H}        & \multicolumn{1}{c|}{}                                                \\ \cline{1-14}
-\multicolumn{1}{|l|}{}            & \multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}EDDR\\ EDRZ\\ EDSB\\ ETAR\end{tabular}} & \multicolumn{1}{l|}{}      & \multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}only via\\ ABUMO\\ ASKIK\end{tabular}} & \multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}EDDF\\ EDFC\\ EDFE\\ ETOU\end{tabular}} & \multicolumn{1}{l|}{}                                               & \multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}only via\\ Z76\end{tabular}} & \multicolumn{1}{l||}{\scriptsize \begin{tabular}[c]{@{}l@{}}only \\ N869\\ EDDN\\ EDTY\\ EDQ*\end{tabular}} & \multicolumn{1}{l|}{}      & \multicolumn{1}{l|}{}      & \multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}Prop,\\ Jet only\\ EDNY\\ EDTL\\ LSZH\\ LSZR\end{tabular}} & \multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}via \\ NATOR\\ not for\\ prop, \\ use\\ SUL\end{tabular}} & \multicolumn{1}{c|}{\scriptsize \begin{tabular}[c]{@{}c@{}}local IFR\\ ETHL\end{tabular}} & \multicolumn{1}{l|}{\scriptsize local IFR} & \multicolumn{1}{c|}{}                                                \\ \hline
-\multicolumn{2}{|l}{Handoff}                                                                                              & \multicolumn{6}{c||}{SN}                                                                                                                                                                                                                                                                                                                                                                                                                                       & \multicolumn{4}{c|}{SS}                                                                                                                                                                                                                                                  & \multicolumn{2}{c|}{SF}                                                                                        & \multicolumn{1}{l}{}                                                 \\ \cline{1-14}
-\end{tabular}
-\end{table}
-\end{textblock}
 
 \begin{textblock}{2}(210, 0)
   \includegraphics[width=30\textwidth]{VATGer-Logo-Colour}
@@ -63,8 +46,28 @@
   \centering
   EDDS Quicksheet
 
-  \monthyear\today
+ \DTMlangsetup{showdayofmonth=false}
+  \today
 \end{textblock}
+
+
+\begin{textblock}{30}(0,15)
+\begin{table}[]
+\begin{tabular}{lcccccccccccccc}
+                                  & \multicolumn{7}{c}{\textbf{North departures}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          & \multicolumn{6}{c}{\textbf{South departures}}                                                                                                                                                                                                                                                                                                                                             & \multicolumn{1}{l}{}                                                 \\ \hline
+\multicolumn{1}{|l|}{SID}         & \multicolumn{1}{c|}{KRH}                                                               & \multicolumn{1}{c|}{VESID} & \multicolumn{1}{c|}{TAGIK}                                                            & \multicolumn{1}{c|}{ETASA}                                                             & \multicolumn{1}{c|}{OKIBA}                                          & \multicolumn{1}{c|}{GEBNO}                                                  & \multicolumn{1}{c||}{DKB}                                                                    & \multicolumn{1}{c|}{ABTAL} & \multicolumn{1}{c|}{KUNOD} & \multicolumn{1}{c|}{SUL}                                                                                  & \multicolumn{1}{c|}{ROTWE}                                                                         & \multicolumn{1}{c|}{TEDGO}                                                    & \multicolumn{1}{c|}{STG}       & \multicolumn{1}{c|}{\multirow{10}{*}{\rotatebox{90}{\textbf{5000 ft}}}} \\ \cline{1-14}
+\multicolumn{1}{|l|}{RFL}         & \multicolumn{1}{l|}{even}                                                              & \multicolumn{1}{l|}{even}  & \multicolumn{1}{l|}{even}                                                             & \multicolumn{1}{l|}{even}                                                              & \multicolumn{1}{l|}{even}                                           & \multicolumn{1}{l|}{even}                                                   & \multicolumn{1}{l||}{odd}                                                                    & \multicolumn{1}{l|}{odd}   & \multicolumn{1}{l|}{odd}   & \multicolumn{1}{l|}{odd}                                                                                  & \multicolumn{1}{l|}{odd LS}                                                                        & \multicolumn{1}{l|}{odd}                                                      & \multicolumn{1}{l|}{odd}       & \multicolumn{1}{c|}{}                                                \\ \cline{1-14}
+\multicolumn{1}{|l|}{}            & \multicolumn{1}{r|}{\scriptsize \textless{}FL85}                        & \multicolumn{1}{r|}{}      & \multicolumn{1}{r|}{\scriptsize \textless{}FL245}                      & \multicolumn{1}{r|}{}                                                                  & \multicolumn{1}{r|}{\scriptsize \textgreater{}FL195} & \multicolumn{1}{r|}{\scriptsize \textless{}FL185}            & \multicolumn{1}{r||}{}                                                                       & \multicolumn{1}{r|}{}      & \multicolumn{1}{r|}{}      & \multicolumn{1}{r|}{}                                                                                     & \multicolumn{1}{l|}{even LF}                                            & \multicolumn{1}{r|}{}                                                         & \multicolumn{1}{r|}{}          & \multicolumn{1}{c|}{}                                                \\ \cline{1-14}
+\multicolumn{1}{|l|}{\textbf{25}} & \multicolumn{1}{c|}{\textbf{5B}}                                                                & \multicolumn{1}{c|}{\textbf{4B}}    & \multicolumn{1}{c|}{\textbf{4B}}                                                               & \multicolumn{1}{c|}{\textbf{4B}}                                                                & \multicolumn{1}{c|}{\textbf{4B}}                                             & \multicolumn{1}{c|}{\textbf{7B}}                                                     & \multicolumn{1}{c||}{\textbf{9B}}                                                                     & \multicolumn{1}{c|}{\textbf{4B}}    & \multicolumn{1}{c|}{\textbf{2B}}    & \multicolumn{1}{c|}{\textbf{3B}}                                                                                   & \multicolumn{1}{c|}{\textbf{5B}}                                                                            & \multicolumn{1}{c|}{\textbf{1B}}                                                       & \multicolumn{1}{c|}{\textbf{1B}}        & \multicolumn{1}{c|}{}                                                \\ \cline{1-14}
+\multicolumn{1}{|l|}{\textbf{07}} & \multicolumn{1}{c|}{\textbf{2H}}                                                                & \multicolumn{1}{c|}{\textbf{2H}}    & \multicolumn{1}{c|}{\textbf{2H}}                                                               & \multicolumn{1}{c|}{\textbf{2H}}                                                                & \multicolumn{1}{c|}{\textbf{4H}}                                             & \multicolumn{1}{c|}{\textbf{6H}}                                                     & \multicolumn{1}{c||}{\textbf{4H}}                                                                     & \multicolumn{1}{c|}{\textbf{4H}}    & \multicolumn{1}{c|}{\textbf{2H}}    & \multicolumn{1}{c|}{\textbf{3H}}                                                                                   & \multicolumn{1}{c|}{\textbf{7H}}                                                                            & \multicolumn{1}{c|}{\textbf{2H}}                                                       & \multicolumn{1}{c|}{\textbf{2H}}        & \multicolumn{1}{c|}{}                                                \\ \cline{1-14}
+\multicolumn{1}{|l|}{}            & \multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}EDDR\\ EDRZ\\ EDSB\\ ETAR\end{tabular}} & \multicolumn{1}{l|}{}      & \multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}only via\\ ABUMO\\ ASKIK\end{tabular}} & \multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}EDDF\\ EDFC\\ EDFE\\ ETOU\end{tabular}} & \multicolumn{1}{l|}{}                                               & \multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}only via\\ Z76\end{tabular}} & \multicolumn{1}{l||}{\scriptsize \begin{tabular}[c]{@{}l@{}}only \\ N869\\ EDDN\\ EDTY\\ EDQ*\end{tabular}} & \multicolumn{1}{l|}{}      & \multicolumn{1}{l|}{}      & \multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}Prop,\\ Jet only\\ EDNY\\ EDTL\\ LSZH\\ LSZR\end{tabular}} & \multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}via \\ NATOR\\ not for\\ prop, \\ use\\ SUL\end{tabular}} & \multicolumn{1}{c|}{\scriptsize \begin{tabular}[c]{@{}c@{}}local IFR\\ ETHL\end{tabular}} & \multicolumn{1}{l|}{\scriptsize local IFR} & \multicolumn{1}{c|}{}                                                \\ \hline
+\multicolumn{2}{|l}{Handoff}                                                                                              & \multicolumn{6}{c||}{SN}                                                                                                                                                                                                                                                                                                                                                                                                                                       & \multicolumn{4}{c|}{SS}                                                                                                                                                                                                                                                  & \multicolumn{2}{c|}{SF}                                                                                        & \multicolumn{1}{l}{}                                                 \\ \cline{1-14}
+\multicolumn{8}{l}{Departure interval: 5NM same direction (North/South)}
+\end{tabular}
+\end{table}
+\end{textblock}
+
+
 
 \begin{textblock}{100}(0, 95)
 \begin{table}[]
@@ -100,7 +103,7 @@
 \end{table}
 \end{textblock}
 
-\begin{textblock}{100}(110, 70)
+\begin{textblock}{100}(110, 72)
 \begin{table}[]
 \begin{tabular}{llllll}
 \multicolumn{6}{c}{\textbf{Holdings}}                                                                                                                                        \\ \hline
@@ -112,7 +115,7 @@
 \end{textblock}
 
 
-\begin{textblock}{100}(0, 70)
+\begin{textblock}{100}(0, 72)
 \begin{table}[]
 \begin{tabular}{llllllll}
 \multicolumn{8}{c}{\textbf{Handoff Levels}}                                                                                                                     \\ \hline
